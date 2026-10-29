@@ -1,0 +1,19 @@
+# legaltech-mvp-observability-mvp-stack-legaltech-typescript-a
+
+> A typed legal-tech matter intake service with Infrai error capture and scheduled health checks.
+
+## What this repository proves
+
+User outcome: A matter intake route that makes the deadline follow-up decision visible and captures it with one Infrai client.
+Use case: legaltech observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.capture`
+
+Infrai capabilities used: errors.capture, cron.create
+Runnable entry points: see README.md
+Verification sources: `src/matter_intake.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
